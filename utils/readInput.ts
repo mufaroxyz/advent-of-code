@@ -1,4 +1,4 @@
-export default async function readInput(day:number) {
-    const open = Bun.file(`${process.cwd()}/days/${day}/input.txt`);
+export default async function readInput() {
+    const open = Bun.file(`${process.cwd()}/input.txt`);
     return await open.text().then((text) => text.split('\n'));
 } 
